@@ -1,5 +1,5 @@
 <%=@recipe.ingredients%>
-<form action="/recipes/:id" method="post">
+<form action="/recipes/<%=@recipe.id%>" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
 Name: <input type="text" name="name">
 Ingredients: <input type="text" name="ingredients">

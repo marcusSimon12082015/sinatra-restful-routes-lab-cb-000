@@ -1,5 +1,8 @@
 <%=@recipe.ingredients%>
 <form>
 <input id="hidden" type="hidden" name="_method" value="patch">
-<input type="submit" value="Edit">
+Name: <input type="text" name="name">
+Ingredients: <input type="text" name="ingredients">
+Cook Time: <input type="text" name="cook_time">
+<input type="submit" value="Submit">
 </form>

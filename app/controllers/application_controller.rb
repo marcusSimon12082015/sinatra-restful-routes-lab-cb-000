@@ -13,9 +13,7 @@ class ApplicationController < Sinatra::Base
 
   get '/recipes/:id' do
     @recipe = Recipe.find(params[:id])
-    puts "#{@recipe.name}"
-    puts "#{@recipe.name}"
-    puts "#{@recipe.cook_time}"
+    puts "#{@recipe.name} -- #{@recipe.name} -- #{@recipe.cook_time}"
   end
 
   post '/recipes' do
